@@ -26,9 +26,11 @@ public class DeadLock {
     }
 }
 
-class Food {}
+class Food {
+}
 
-class Water {}
+class Water {
+}
 
 class Fox {
     public void eatAndDrink(Food food, Water water) {
@@ -55,7 +57,7 @@ class Fox {
         try {
             Thread.sleep(100);
         } catch (InterruptedException e) {
-        // Handle exception
+            // Handle exception
         }
     }
 }
